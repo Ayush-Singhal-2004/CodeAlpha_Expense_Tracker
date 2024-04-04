@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+            <img src="https://play-lh.googleusercontent.com/27oDxUYHG9xiHxgktqespIj16pilDpimWsuJY0UDMl3mpAn9P2kGodn8Rr1ejNvULw" alt="">
+            <h1>Expense Tracker</h1>
+        </nav>
+        <div class="main">
+            <div class="main-left">
+                <div class="chart-container">
+                    <div class="total-exp">
+                        <h3>Total Expenses</h3>
+                        <p>
+                            <!-- total expense -->
+                        </p>
+                    </div>
+                    <canvas id="chart"></canvas>
+                </div>
+            </div>
+            <div class="main-right">
+                <div class="expenses-container">
+                    <div class="expenses-container-head">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="grey" class="bi bi-calendar2-event" viewBox="0 0 16 16">
+                            <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z"/>
+                            <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                        <p>Your Transaction History</p>
+                    </div>
+                    <div class="expenses-list">
+                        <!-- Expenses -->
+                    </div>
+                    <div class="add-expense">
+                        <lord-icon
+                            src="https://cdn.lordicon.com/ciawvzjk.json"
+                            trigger="hover"
+                            colors="primary:#545454"
+                            style="width:40px;height:40px">
+                        </lord-icon>
+                        <p>Missing Transaction?</p>
+                        <div class="button">Add New</div>
+                    </div>
+                </div>
+            </div>
+            <div class="expense-input-container" id="expense-input-container-id">
+                <div class="expense-input">
+                    <input type="text" placeholder="Expense">
+                    <input type="text" placeholder="Amount">
+                    <div class="button">Add Expense</div>
+                    <div class="input-close" id="close-btn">
+                        <lord-icon
+                        src="https://cdn.lordicon.com/nqtddedc.json"
+                        trigger="hover"
+                        colors="primary:#545454"
+                        style="width:25px;height:25px">
+                        </lord-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
