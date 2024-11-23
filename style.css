@@ -239,3 +239,67 @@ nav h1{
     right: 5%;
     cursor: pointer;
 }
+
+#wallet-icon{
+    width:40px;
+    height:40px
+}
+
+@media only screen and (max-width: 430px) {
+    .main {
+        flex-direction: column-reverse;
+    }
+
+    nav h1{
+        font-size: 6vw;
+    }
+
+    nav img{
+        height: 10vw;
+        margin: 0 3vw;
+    }
+
+    .main-right{
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .expenses-container{
+        height: 100%;
+        width: 90%;
+        border-radius: 5px;
+        border: 1px solid rgb(204, 204, 204);
+        background-color: white;
+    }
+
+    .expense{
+        padding-left: 3vh;
+    }
+
+    #wallet-icon {
+        height: 30px;
+        width: 30px;
+    }
+
+    .add-expense{
+        padding-left: 2vh;
+        gap: 2vh;
+    }
+
+    .total-exp{
+        height: 28%;
+        width: 50%;
+        gap: 1vh;
+    }
+
+    .chart-container{
+        width: 95%;
+    }
+
+    .expense-input{
+        height: 60%;
+        width: 70%;
+    }
+}
